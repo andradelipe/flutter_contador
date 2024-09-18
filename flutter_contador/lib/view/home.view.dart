@@ -9,12 +9,12 @@ class HomeView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Contador com GetX'),
+        title: const Text('Contador com GetX'),
       ),
       body: Center(
         child: Obx(() => Text(
               'Contador: ${contadorController.contador}',
-              style: TextStyle(fontSize: 24),
+              style: const TextStyle(fontSize: 24),
             )),
       ),
       floatingActionButton: Column(
@@ -22,12 +22,12 @@ class HomeView extends StatelessWidget {
         children: [
           FloatingActionButton(
             onPressed: contadorController.incrementar,
-            child: Icon(Icons.add),
+            child: const Icon(Icons.add),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           FloatingActionButton(
             onPressed: contadorController.decrementar,
-            child: Icon(Icons.remove),
+            child: const Icon(Icons.remove),
           ),
         ],
       ),
